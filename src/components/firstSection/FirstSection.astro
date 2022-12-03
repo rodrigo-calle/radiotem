@@ -11,40 +11,40 @@
         </div>
     </div>
     <div class="first-section-body">
-        <div>
-            <div>
-                <p>
+        <div class="first-section-body__description-container">
+            <div class="description-container__header">
+                <h3>
                     Brindamos un diagnóstico seguro, eficaz y
                     preciso, así como un servicio de calidad
                     para todos nuestros pacientes.
-                </p>                
+                </h3>                
             </div>
-            <div>
-                <ul>
-                    <li>Entrega de Placas en 20 minutos.</li>
-                    <li>
+            <div class="description-container__list-container">
+                <ul class="list-container__group">
+                    <li class="list-container__group-item">Entrega de Placas en 20 minutos.</li>
+                    <li class="list-container__group-item">
                         Entregas de informes médico en un máximo del 2 horas,
                         dentro del mismo día que se realizó el estudio.
                     </li>
-                    <li>
+                    <li class="list-container__group-item">
                         Atención las 24 horas, los 7 días de la semana incluido
                          feriados
                     </li>
-                    <li>
+                    <li class="list-container__group-item">
                         Atención en oficina de 8 am a 8 pm.
                     </li>
-                    <li>
+                    <li class="list-container__group-item">
                         Servicio de ambulancia, silla de ruedas, camilla y personal 
                         autorizado.
                     </li>
                 </ul>
 
             </div>
-            <div>
+            <div class="description-container__button-container">
                 <button>RESERVA TU CITA</button>
             </div>
         </div>
-        <div>
+        <div class="first-section-body__image-container">
             <img src="./images/firstSection/doctor.png" alt="">
         </div>
     </div>
@@ -66,8 +66,13 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        width: 70%;
+        width: 90%;
         padding: 0px 20px;
+        margin: 0 auto;
+    }
+
+    .logo-container {
+        width: 50%;
     }
     .img {
         width: 260px;
@@ -78,18 +83,73 @@
         display: flex;
         flex-direction: row;
         color: #fff;
-        justify-content: flex-end;
+        justify-content: flex-start;
         align-items: center;
         flex-wrap: wrap;
+        width: 50%;
     }
     .first-section-navbar__item {
         padding: 15px;
         font-weight: bold;
     }
-
     .first-section-body {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
+        height: fit-content;
+        padding: 20px;
+    }
+
+    .first-section-body__description-container {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+    }
+    .description-container__header {
+        background-color: #fff; 
+        color: #26619C ;  
+        padding: 5px; 
+        border-radius: 100px 10px / 190px;
+        margin: 35px 0px 10px 0px
+    }
+    .description-container__header h3 {
+        margin: 0;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .first-section-body__description-container .list-container__group {
+        padding-left: 50px;
+        color: #fff;
+    }
+
+    .description-container__button-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .description-container__button-container button{
+        color: #26619C;
+        background-color: #fff;
+        padding: 5px 35px;
+        border-radius: 20px;
+        font-weight: bold;
+        border: none;
+        font-size: 25px;
+    }
+
+    .first-section-body__image-container {
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .first-section-body__image-container img {
+        width: 100%;
+        height: 100%;
     }
 </style>
