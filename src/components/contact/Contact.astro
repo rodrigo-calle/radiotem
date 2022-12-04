@@ -1,0 +1,80 @@
+<div class="contact-container">
+    <div class="header-container">
+        <!-- <img src="../images/contact/header__shadow.png" alt="">  -->
+    </div>
+    <div class="body-container">
+        <h1>Tecnólogos y Médicos Radiólogos <br>
+        a su servicio</h1>
+        <p>
+            Contamos con profesionales
+            médicos y tecnólogos 
+            capacitados para brindarles el 
+            mejor servicio de diagnostico de  
+            imagenes, en nuestro equipo 
+            tenemos a siete Licenciados en 
+            Tecnología Médica, con 
+            especialización en Radiología y a 
+            Médicos Radiólogos con 
+            especialidad en Oncología.
+
+        </p>
+        <img src="../images/contact/doctors.png" alt="">
+        <!-- <img src="../images/contact/contact.png" alt=""> -->
+    </div>
+</div>
+<style>
+    .contact-container {
+        background-image: url('../images/fifthSection/fifth_section_background.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 1100px;
+    }
+    .contact-container .header-container {
+
+        background-image: url('../images/contact/header__shadow.png');
+        background-position: 0%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 180px;
+    }
+    .contact-container .header-container img {
+        width: 100%;
+        display: block;
+        z-index: 100;
+    }
+    .contact-container .body-container {
+        width: 100%;
+        /* height: calc(100% - 180px); */
+        height: calc(fit-content - 180px);
+        display: grid;
+        font-size: 30px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: 
+            ". title title title title title title title . . . ."
+            ". text text text text img img img img img img ."
+            ". text text text text img img img img img img ."
+            ". text text text text img img img img img img ."
+            ". . . . . img img img img img img ."
+        ;
+        
+    }
+    .contact-container .body-container h1 {
+        grid-area: title;
+        margin-top: -30px;
+
+    }
+    .contact-container .body-container p {
+        grid-area: text;
+    }
+    .contact-container .body-container img {
+        /* height: 800px;
+        width: 90%;
+        margin-top: -120px; */
+        grid-area: img;
+        height: 500px;
+        width: 750px;
+        margin-bottom: 0px;
+    }
+</style>

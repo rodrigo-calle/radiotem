@@ -1,0 +1,67 @@
+<div class="second-section-container">
+    <div class="second-section__descripction">
+        <p>
+            Ingresa a nuestro <br> portal para <strong>doctores</strong> 
+        </p>
+    </div>
+    <div class="second_section__button-container">
+        <img src="./images/secondSection/estetoscopio.png" alt="">
+        <button>
+            Haga clic para ver su lista de <br> pacientes
+        </button>
+    </div>
+</div>
+
+<style>
+    .second-section-container {
+        background-image: url('./images/secondSection/second_section_background.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(2, 0.5fr);
+        grid-template-areas: 
+        ". . . . . . . . . . . ."
+        ". . . . . . . description description description description ."
+        ". . . . . . . btn btn btn btn ."
+        ". . . . . . . . . . . ."
+        ;
+
+    }
+    .second-section__descripction {
+        grid-area: description;
+        font-size: 45px;
+        font-weight: 400;
+        color: #fff;
+        text-align: center;
+    }
+
+    .second_section__button-container {
+        grid-area: btn;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .second_section__button-container img {
+        display: block;
+        height: 50px;
+        width: 50px;
+        margin-right: -28px;
+        margin-top: -10px;
+        z-index: 1;
+    }
+    .second_section__button-container button{
+        color: #26619C;
+        background-color: #fff;
+        border: none;
+        padding: 10px 60px;
+        border-radius: 70px;
+        font-size: 22px;
+        line-height: 30px;
+        font-weight: 500;
+    }
+
+</style>

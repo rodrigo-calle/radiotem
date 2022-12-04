@@ -2,12 +2,12 @@
     <div class="first-section-container__header">
         <div class="logo-container">
             <!-- <img src="" alt=""> -->
-            <div class="img"></div>
+            <div class="img">LOGO</div>
         </div>
         <div class="first-section-navbar">
-            <div class="first-section-navbar__item">Staff Médico</div>
-            <div class="first-section-navbar__item">Equipos</div>
-            <div class="first-section-navbar__item">Contacto</div>
+            <a href="/medicos/" class="first-section-navbar__item">Staff Médico</a>
+            <a href="/equipos/" class="first-section-navbar__item">Equipos</a>
+            <a href="/contacto/" class="first-section-navbar__item">Contacto</a>
         </div>
     </div>
     <div class="first-section-body">
@@ -52,6 +52,7 @@
 
 <style>
     .first-section-container {
+        font-size: 22px;
         background-image: url('./images/firstSection/first_section_background.png');
         background-repeat: no-repeat;
         background-position: center;
@@ -59,20 +60,33 @@
         width: 100%;
         height: fit-content;
         padding: 25px 0px;
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-rows: 0.5fr 0.2fr repeat(4, 1fr);
+        grid-template-columns: repeat(13, 1fr);
+        grid-template-areas: 
+            " . header header header header header header  header header header header header ."
+            ". . . . . . . . . . . . ."
+            ". body body body body body body body body body body body ."
+            ". body body body body body body body body body body body ."
+            ". body body body body body body body body body body body ."
+            ". body body body body body body body body body body body .";
+        /* display: flex;
+        flex-direction: column; */
     }
     .first-section-container__header {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        width: 90%;
-        padding: 0px 20px;
+        width: 100%;
+        padding: 0px 0px;
         margin: 0 auto;
+        grid-area: header;
     }
 
     .logo-container {
         width: 50%;
+        display: flex;
+        align-items: center;
     }
     .img {
         width: 260px;
@@ -91,26 +105,42 @@
     .first-section-navbar__item {
         padding: 15px;
         font-weight: bold;
+        text-decoration: none;
+        color: #fff;
     }
     .first-section-body {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        height: fit-content;
-        padding: 20px;
+        display: grid;
+        /* flex-direction: row; */
+        /* justify-content: space-between; */
+        height: 700px;
+        padding: 0px;
+        grid-area: body;
+        grid-template-columns: repeat(13, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas: 
+        ". . . . . . . img-container img-container img-container img-container img-container img-container"
+        "description description description description description description . img-container img-container img-container img-container img-container img-container"
+        "description description description description description description . img-container img-container img-container img-container img-container img-container"
+        "description description description description description description . img-container img-container img-container img-container img-container img-container"
+        "description description description description description description . img-container img-container img-container img-container img-container img-container"
+        "description description description description description description . img-container img-container img-container img-container img-container img-container"
+        "description description description description description description . img-container img-container img-container img-container img-container img-container"
+        "description description description description description description . img-container img-container img-container img-container img-container img-container"
+        ;
     }
 
     .first-section-body__description-container {
-        width: 45%;
+        width: 100%;
         display: flex;
         flex-direction: column;
+        grid-area: description;
     }
     .description-container__header {
         background-color: #fff; 
-        color: #26619C ;  
-        padding: 5px; 
+        color: #26619C;  
+        padding: 10px; 
         border-radius: 100px 10px / 190px;
-        margin: 35px 0px 10px 0px
+        margin: 5px 0px 10px 0px
     }
     .description-container__header h3 {
         margin: 0;
@@ -119,10 +149,13 @@
     }
 
     .first-section-body__description-container .list-container__group {
-        padding-left: 50px;
+        padding-left: 70px;
         color: #fff;
     }
-
+    .list-container__group-item {
+        line-height: 30px;
+        margin: 15px 0px;
+    }
     .description-container__button-container {
         width: 100%;
         display: flex;
@@ -134,18 +167,19 @@
     .description-container__button-container button{
         color: #26619C;
         background-color: #fff;
-        padding: 5px 35px;
-        border-radius: 20px;
+        padding: 10px 45px;
+        border-radius: 30px;
         font-weight: bold;
         border: none;
-        font-size: 25px;
+        font-size: 35px;
     }
 
     .first-section-body__image-container {
-        width: 45%;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+        grid-area: img-container;
     }
 
     .first-section-body__image-container img {
