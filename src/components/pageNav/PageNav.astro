@@ -1,7 +1,6 @@
 <div class="first-section-container__header">
     <div class="logo-container">
         <img class="img" src="https://res.cloudinary.com/dwat1o60y/image/upload/v1670424865/radiotem/LOGO-PNG_bsp8gm.png" alt="">
-        <!-- <div class="img">LOGO</div> -->
     </div>
     <div class="first-section-navbar">
         <a href="/medicos/" class="first-section-navbar__item">Staff Médico</a>
@@ -47,7 +46,26 @@
         text-decoration: none;
         color: #fff;
     }
+    @media only screen and (max-width: 1400px) { 
+        .img {
+            width: 530px;
+            height: 140px;
+        }
+    }
 
+    @media only screen and (max-width: 1250px) { 
+        .img {
+            width: 330px;
+            height: 120px;
+        }
+    }
+
+    @media only screen and (max-width: 950px) {
+        .img {
+            width: 280px;
+            height: 90px;
+        }
+    }
     @media only screen and (max-width: 900px) { 
         .first-section-container__header {
             padding: 0px;
@@ -64,6 +82,13 @@
             width: 50%;
         }
     }
+
+    @media only screen and (max-width: 750px) {
+        .img {
+            width: 290px;
+            height: 80px;
+        }
+    }
     @media only screen and (max-width: 600px) { 
         .first-section-navbar__item {
             font-size: 14px;
@@ -74,6 +99,10 @@
         }
         .irst-section-navbar {
             width: 50%;
+        }
+        .img {
+            width: 260px;
+            height: 60px;
         }
     }
 </style>
