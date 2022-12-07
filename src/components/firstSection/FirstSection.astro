@@ -1,7 +1,7 @@
 <div class="first-section-container">
     <div class="first-section-container__header">
         <div class="logo-container">
-            <div class="img">LOGO</div>
+            <img src="https://res.cloudinary.com/dwat1o60y/image/upload/v1670424865/radiotem/LOGO-PNG_bsp8gm.png" alt="" class="img">
         </div>
         <div class="first-section-navbar">
             <a href="/medicos/" class="first-section-navbar__item">Staff Médico</a>
@@ -51,7 +51,7 @@
 
 <style>
     .first-section-container {
-        font-size: 22px;
+        font-size: 30px;
         background-image: url('https://res.cloudinary.com/dwat1o60y/image/upload/v1670396471/radiotem/first_section_background_nttvgc.png');
         background-repeat: no-repeat;
         background-position: center;
@@ -71,6 +71,7 @@
             ". body body body body body body body body body body body .";
         /* display: flex;
         flex-direction: column; */
+        padding-bottom: 60px;
     }
     .first-section-container__header {
         display: flex;
@@ -88,9 +89,8 @@
         align-items: center;
     }
     .img {
-        width: 260px;
-        height: 70px;
-        background-color: blueviolet;
+        width: 580px;
+        height: 160px;
     }
     .first-section-navbar {
         display: flex;
@@ -191,9 +191,20 @@
             width: 90%;
             height: 80%;
         }
+        .first-section-container {
+            font-size: 24px;
+        }
+        .img {
+            width: 530px;
+            height: 140px;
+        }
     }
 
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: 1250px) {
+        .img {
+            width: 330px;
+            height: 120px;
+        }
         .first-section-container {
             font-size: 20px;
         }
@@ -235,6 +246,11 @@
         }
         .logo-container {
             width: 40%;
+        }
+
+        .img {
+            width: 280px;
+            height: 90px;
         }
         .irst-section-navbar {
             width: 50%;
@@ -292,7 +308,10 @@
         .irst-section-navbar {
             width: 50%;
         }
-
+        .img {
+            width: 290px;
+            height: 80px;
+        }
 
         .first-section-container {
             font-size: 18px;
@@ -355,11 +374,11 @@
         }
 
         .first-section-container {
-            font-size: 16px;
+            font-size: 12px;
             height: fit-content;
         }
         .list-container__group-item {
-            line-height: 18px;
+            line-height: 12px;
             margin: 5px 0px;
         }
         .description-container__button-container {
@@ -386,7 +405,7 @@
             height: 40%;
         }
         .first-section-body__description-container .list-container__group  {
-            padding-left: 20px;
+            padding-left: 10px;
         }
 
 
@@ -409,6 +428,11 @@
             "description description description description description description description img-container img-container img-container img-container img-container img-container"
             "description description description description description description description img-container img-container img-container img-container img-container img-container"
             ;
+        }
+
+        .img {
+            width: 260px;
+            height: 60px;
         }
 
     }
