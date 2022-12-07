@@ -1,0 +1,51 @@
+<div class="first-section-container__header">
+    <div class="logo-container">
+        <!-- <img src="" alt=""> -->
+        <div class="img">LOGO</div>
+    </div>
+    <div class="first-section-navbar">
+        <a href="/medicos/" class="first-section-navbar__item">Staff Médico</a>
+        <a href="/equipos/" class="first-section-navbar__item">Equipos</a>
+        <a href="/contacto/" class="first-section-navbar__item">Contacto</a>
+    </div>
+</div>
+
+<style>
+    .first-section-container__header {
+        font-size: 22px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 90%;
+        padding: 0px 0px;
+        margin: 0 auto;
+        grid-area: header;
+        padding: 50px;
+    }
+
+    .logo-container {
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+    .img {
+        width: 260px;
+        height: 70px;
+        background-color: blueviolet;
+    }
+    .first-section-navbar {
+        display: flex;
+        flex-direction: row;
+        color: #fff;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 50%;
+    }
+    .first-section-navbar__item {
+        padding: 15px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #fff;
+    }
+</style>

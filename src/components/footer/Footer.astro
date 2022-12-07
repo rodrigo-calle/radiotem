@@ -13,9 +13,9 @@
         </p>
     </div>
     <div class="footer-section__menu-container">
-        <p class="footer__menu-container--item">Inicio</p>
-        <p class="footer__menu-container--item">Política de cookies</p>
-        <p class="footer__menu-container--item no-border">Política de privacidad</p>
+        <a href="/" class="footer__menu-container--item">Inicio</a>
+        <a href="#" class="footer__menu-container--item">Política de cookies</a>
+        <a href="#" class="footer__menu-container--item no-border">Política de privacidad</a>
     </div>
 </div>
 
@@ -33,6 +33,8 @@
         font-size: 25px;
         text-align: center;
         color: #26619C;
+        display: flex;
+        flex-direction: column;
     }
     .footer__menu-container--item {
         border-bottom: 3px solid #26619C;
@@ -49,9 +51,11 @@
     .footer-section__contact-container h2 {
         font-size: 35px;
     }
-    .footer-section__contact-container p {
+    .footer-section__menu-container a {
         font-size: 22px;
         margin: 10px 0px;
+        text-decoration: none;
+        color: #26619C;
     }
 
     .footer-location {

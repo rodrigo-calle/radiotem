@@ -1,0 +1,115 @@
+---
+import Navbar from "../navbar/Navbar.astro";
+import PageNav from "../pageNav/PageNav.astro";
+---
+
+
+ <Navbar />
+ <div class="tools-container">
+    <div class="header-container">
+        <PageNav />
+     </div>
+     <div class="tools-container__body">
+        <div class="tools-container__body--description">
+            <h1>
+                TOMOGRAFÍA COMPUTARIZADA
+            </h1>
+            <p>
+                Tenemos los mejores equipos para tomografías
+                computarizadas del país.
+            </p>
+            <ul>
+                <li> - Trabajamos las 24 horas del día, los 7 días de la semana
+                     (incluyendo feriados).
+                </li>
+                <li>
+                     - Entrega de placas y DVD con las ímagenes
+                    del estudio.
+                </li>
+                <li>
+                    - La mejor calidad de imágenes.
+                </li>
+                <li>
+                     - Reconstrucción en 3D.
+                </li>
+                <li>
+                     - Personal altamente calificado.
+                </li>
+            </ul>
+        </div>
+        <div class="tools-container__body--image">
+            <img src="https://res.cloudinary.com/dwat1o60y/image/upload/v1670383988/radiotem/10_dpr4cw.png" alt="">
+        </div>
+
+     </div>
+ </div>
+
+
+ <style>
+    .tools-container {
+        background-image: url('../images/fifthSection/fifth_section_background.png');
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: fit-content;
+        margin-top: 0px;
+    }
+
+    .header-container {
+        background-image: url('../images/contact/header__shadow.png');
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 280px;
+        margin-top: 0px;
+    }
+    .tools-container__body {
+        display: flex;
+        flex-direction: row;
+        margin-top: -90px;
+
+    }
+
+    .tools-container__body--description p {
+        color: #26619C;
+        font-size: 28px;
+        width: 75%;        
+        margin: 0 auto;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+
+    .tools-container__body--description ul {
+        color: #26619C;
+        font-size: 28px;
+        width: 75%;        
+        margin: 0 auto;
+        list-style-type: none;
+    }
+
+    .tools-container__body--description ul li {
+        margin-top: 15px;
+    }
+
+    .tools-container__body--description h1 {
+        background-color: #26619C;
+        color: #fff;
+        padding: 15px;
+        border-radius: 15px;
+        width: 80%;
+        margin: 0 auto;
+        font-size: 35px;
+    }
+    .tools-container__body--image {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 70%;
+        margin: 0px auto;
+    }
+    .tools-container__body--image img {
+        width: 80%;
+        height: 80%;
+
+    }
+ </style>

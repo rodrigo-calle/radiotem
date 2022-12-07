@@ -1,80 +1,140 @@
+---
+import Navbar from "../navbar/Navbar.astro";
+import PageNav from "../pageNav/PageNav.astro";
+
+---
+
+<Navbar />
 <div class="contact-container">
     <div class="header-container">
-        <!-- <img src="../images/contact/header__shadow.png" alt="">  -->
+        <PageNav />
     </div>
-    <div class="body-container">
-        <h1>Tecnólogos y Médicos Radiólogos <br>
-        a su servicio</h1>
-        <p>
-            Contamos con profesionales
-            médicos y tecnólogos 
-            capacitados para brindarles el 
-            mejor servicio de diagnostico de  
-            imagenes, en nuestro equipo 
-            tenemos a siete Licenciados en 
-            Tecnología Médica, con 
-            especialización en Radiología y a 
-            Médicos Radiólogos con 
-            especialidad en Oncología.
-
-        </p>
-        <img src="../images/contact/doctors.png" alt="">
-        <!-- <img src="../images/contact/contact.png" alt=""> -->
+    <div class="contact-body">
+        <div class="form-container">
+            <h1>Contacto:</h1>
+            <p class="form-description">
+                Nuestra área especializada atenderá sus dudas
+                y le brindará toda la información necesaria para el 
+                servicio que desee.
+            </p>
+            <form action="">
+                <input type="text" placeholder="Nombres y Apellidos*" required><br>
+                <input type="email" placeholder="Correo electrónico*" required><br>
+                <input type="tel" placeholder="Teléfono / Celular*" required><br>
+                <input type="text" placeholder="Consulta*" required><br>
+                <br>
+                <p class="form-notes">
+                    Los campos con * son obligatorios para poder procesar tu
+                    solicitud 
+                </p>
+                <div class="terms-condition-box">
+                    <div class="checkbox-container">
+                        <input type="checkbox">
+                    </div>
+                   
+                    <p>
+                        Acepto haber leído los términos y condiciones de uso de privacidad.
+                        Declaro que los datos consignados son correctos y que esta
+                        declaración se ha confeccionado sin omitir o falsear dato alguno
+                        que debe contener, siendo ﬁel expresión de la verdad.
+                    </p>
+                </div>
+            </form>
+        </div>
+        <div class="image-container">
+            <img src="https://res.cloudinary.com/dwat1o60y/image/upload/v1670388893/radiotem/11_1_hegxzz.png" alt="">
+        </div>
     </div>
 </div>
+
 <style>
     .contact-container {
         background-image: url('../images/fifthSection/fifth_section_background.png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 1100px;
+        height: fit-content;
     }
-    .contact-container .header-container {
 
+    .contact-container .header-container {
         background-image: url('../images/contact/header__shadow.png');
-        background-position: 0%;
+        background-position: bottom;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 180px;
+        height: 280px;
+        margin-top: 0px;
     }
-    .contact-container .header-container img {
-        width: 100%;
-        display: block;
-        z-index: 100;
+    .contact-body {
+        display: flex;
+        flex-direction: row;
+        height: fit-content;
+        margin-top: -90px;
+        padding-bottom: 150px;
     }
-    .contact-container .body-container {
-        width: 100%;
-        /* height: calc(100% - 180px); */
-        height: calc(fit-content - 180px);
-        display: grid;
-        font-size: 30px;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        grid-template-areas: 
-            ". title title title title title title title . . . ."
-            ". text text text text img img img img img img ."
-            ". text text text text img img img img img img ."
-            ". text text text text img img img img img img ."
-            ". . . . . img img img img img img ."
-        ;
-        
+    .form-container {
+        width: 40%;
+        margin: 0px auto;
+        color: #26619C;
     }
-    .contact-container .body-container h1 {
-        grid-area: title;
-        margin-top: -30px;
 
+    .form-container h1 {
+        font-size: 55px;
     }
-    .contact-container .body-container p {
-        grid-area: text;
+    .form-description {
+        font-size: 25px;
     }
-    .contact-container .body-container img {
-        /* height: 800px;
-        width: 90%;
-        margin-top: -120px; */
-        grid-area: img;
-        height: 500px;
-        width: 750px;
-        margin-bottom: 0px;
+    .form-container form input {
+        border: none;
+        font-size: 25px;
+        color: #26619C;
+        border-bottom: 2px solid #26619C;
+        margin-top: 25px;
+        width: 100%;
+        background-color: #ffffff00;
+    }
+    .form-container form input:focus {
+        outline: none;
+    }
+
+    .form-container form input::-webkit-input-placeholder{
+        color: #26619C;
+    }
+    .terms-condition-box {
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+    }
+    .form-notes {
+        font-weight: 600;
+        font-size: 18px;
+    }
+    .terms-condition-box .checkbox-container  {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 15px;
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+    .terms-condition-box .checkbox-container input{
+        width: 25px;
+        border-radius: 7%;
+        height: 25px;
+        margin: 0;
+    }
+
+    .image-container {
+        width: 50%;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 25px 0px;
+    }
+    .image-container img {
+        width: 40%;
+        height: 40%;
     }
 </style>
