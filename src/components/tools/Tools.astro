@@ -53,6 +53,7 @@ import PageNav from "../pageNav/PageNav.astro";
         background-size: cover;
         height: fit-content;
         margin-top: 0px;
+        padding-bottom: 35px;
     }
 
     .header-container {
@@ -111,5 +112,67 @@ import PageNav from "../pageNav/PageNav.astro";
         width: 80%;
         height: 80%;
 
+    }
+    @media only screen and (max-width: 1000px) {
+        .tools-container__body--description p {
+
+            font-size: 26px;
+        }
+
+        .tools-container__body--description ul {
+            font-size: 24px;
+        }
+        .tools-container__body--description ul li {
+            margin-top: 10px;
+        }
+        .tools-container__body--description h1 {
+            font-size: 30px;
+        }
+
+        .tools-container__body--image img {
+            width: 100%;
+            height: 80%;
+        }
+    }
+    @media only screen and (max-width: 800px) {
+        .tools-container__body--description p {
+            font-size: 24px;
+        }
+
+        .tools-container__body--description ul {
+            font-size: 22px;
+        }
+        .tools-container__body--description ul li {
+            margin-top: 8px;
+        }
+        .tools-container__body--description h1 {
+            font-size: 28px;
+        }
+
+        .tools-container__body--image img {
+            width: 100%;
+            height: 70%;
+        }
+    }
+
+    @media only screen and (max-width: 650px) {
+        .tools-container__body--description p {
+            font-size: 16px;
+        }
+
+        .tools-container__body--description ul {
+            font-size: 14px;
+        }
+        .tools-container__body--description ul li {
+            margin-top: 6px;
+        }
+        .tools-container__body--description h1 {
+            font-size: 20px;
+        }
+
+        .tools-container__body--image img {
+            width: 100%;
+            height: 50%;
+        }
     }
  </style>

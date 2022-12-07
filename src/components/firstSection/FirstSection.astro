@@ -1,7 +1,6 @@
 <div class="first-section-container">
     <div class="first-section-container__header">
         <div class="logo-container">
-            <!-- <img src="" alt=""> -->
             <div class="img">LOGO</div>
         </div>
         <div class="first-section-navbar">
@@ -185,5 +184,232 @@
     .first-section-body__image-container img {
         width: 100%;
         height: 100%;
+    }
+
+    @media only screen and (max-width: 1400px) {
+        .first-section-body__image-container img {
+            width: 90%;
+            height: 80%;
+        }
+    }
+
+    @media only screen and (max-width: 1200px) {
+        .first-section-container {
+            font-size: 20px;
+        }
+        .first-section-body__image-container img {
+            width: 90%;
+            height: 70%;
+        }
+
+        .list-container__group-item {
+            line-height: 22px;
+            margin: 10px 0px;
+        }
+
+        .first-section-body {
+            display: grid;
+            /* flex-direction: row; */
+            /* justify-content: space-between; */
+            height: 700px;
+            padding: 0px;
+            grid-area: body;
+            margin-top: 25px;
+            grid-template-columns: repeat(13, 1fr);
+            grid-template-rows: repeat(7, 1fr);
+            grid-template-areas: 
+            "description description description description description description . img-container img-container img-container img-container img-container img-container"
+            "description description description description description description . img-container img-container img-container img-container img-container img-container"
+            "description description description description description description . img-container img-container img-container img-container img-container img-container"
+            "description description description description description description . img-container img-container img-container img-container img-container img-container"
+            "description description description description description description . img-container img-container img-container img-container img-container img-container"
+            "description description description description description description . img-container img-container img-container img-container img-container img-container"
+            "description description description description description description . img-container img-container img-container img-container img-container img-container"
+            ;
+        }
+    }
+    @media only screen and (max-width: 950px) {
+        .first-section-navbar__item {
+            font-size: 18px;
+            padding: 5px;
+        }
+        .logo-container {
+            width: 40%;
+        }
+        .irst-section-navbar {
+            width: 50%;
+        }
+
+        .list-container__group-item {
+            line-height: 22px;
+            margin: 10px 0px;
+        }
+        .first-section-body {
+            display: grid;
+            /* flex-direction: row; */
+            /* justify-content: space-between; */
+            height: 700px;
+            padding: 0px;
+            grid-area: body;
+            margin-top: 25px;
+            grid-template-columns: repeat(13, 1fr);
+            grid-template-rows: repeat(7, 1fr);
+            grid-template-areas: 
+            "description description description description description description description img-container img-container img-container img-container img-container img-container"
+            "description description description description description description description img-container img-container img-container img-container img-container img-container"
+            "description description description description description description description img-container img-container img-container img-container img-container img-container"
+            "description description description description description description description img-container img-container img-container img-container img-container img-container"
+            "description description description description description description description img-container img-container img-container img-container img-container img-container"
+            "description description description description description description description img-container img-container img-container img-container img-container img-container"
+            "description description description description description description description img-container img-container img-container img-container img-container img-container"
+            ;
+        }
+        .description-container__button-container button{
+            color: #26619C;
+            background-color: #fff;
+            padding: 10px 45px;
+            border-radius: 30px;
+            font-weight: bold;
+            border: none;
+            font-size: 30px;
+         }
+
+         .first-section-body__image-container img {
+            width: 100%;
+            height: 60%;
+        }
+ 
+    }
+    @media only screen and (max-width: 750px) {
+
+        .first-section-navbar__item {
+            font-size: 16px;
+            padding: 5px;
+        }
+        .logo-container {
+            width: 40%;
+        }
+        .irst-section-navbar {
+            width: 50%;
+        }
+
+
+        .first-section-container {
+            font-size: 18px;
+        }
+        .list-container__group-item {
+            line-height: 20px;
+            margin: 10px 0px;
+        }
+        .first-section-body {
+            display: grid;
+            /* flex-direction: row; */
+            /* justify-content: space-between; */
+            height: 700px;
+            padding: 0px;
+            grid-area: body;
+            margin-top: 25px;
+            grid-template-columns: repeat(13, 1fr);
+            grid-template-rows: repeat(7, 1fr);
+            grid-template-areas: 
+            "description description description description description description description img-container img-container img-container img-container img-container img-container"
+            "description description description description description description description img-container img-container img-container img-container img-container img-container"
+            "description description description description description description description img-container img-container img-container img-container img-container img-container"
+            "description description description description description description description img-container img-container img-container img-container img-container img-container"
+            "description description description description description description description img-container img-container img-container img-container img-container img-container"
+            "description description description description description description description img-container img-container img-container img-container img-container img-container"
+            "description description description description description description description img-container img-container img-container img-container img-container img-container"
+            ;
+        }
+        .description-container__button-container button{
+            color: #26619C;
+            background-color: #fff;
+            padding: 5px 35px;
+            border-radius: 30px;
+            font-weight: bold;
+            border: none;
+            font-size: 26px;
+         }
+         .description-container__header {
+            font-size: 16px;
+         }
+
+         .first-section-body__image-container img {
+            width: 100%;
+            height: 50%;
+        }
+        .first-section-body__description-container .list-container__group  {
+            padding-left: 40px;
+        }
+    }
+    @media only screen and (max-width: 600px) { 
+        .first-section-navbar__item {
+            font-size: 14px;
+            padding: 3px;
+        }
+        .logo-container {
+            width: 40%;
+        }
+        .irst-section-navbar {
+            width: 50%;
+        }
+
+        .first-section-container {
+            font-size: 16px;
+            height: fit-content;
+        }
+        .list-container__group-item {
+            line-height: 18px;
+            margin: 5px 0px;
+        }
+        .description-container__button-container {
+            width: fit-content;
+        }
+
+        .description-container__button-container button{
+            color: #26619C;
+            background-color: #fff;
+            padding: 5px 15px;
+            border-radius: 30px;
+            font-weight: bold;
+            border: none;
+            font-size: 20px;
+            width: 200px
+         }
+         .description-container__header {
+            font-size: 14px;
+            width: 300px;
+         }
+
+         .first-section-body__image-container img {
+            width: 100%;
+            height: 40%;
+        }
+        .first-section-body__description-container .list-container__group  {
+            padding-left: 20px;
+        }
+
+
+        .first-section-body {
+            display: grid;
+            /* flex-direction: row; */
+            /* justify-content: space-between; */
+            height: fit-content;
+            padding: 0px;
+            grid-area: body;
+            margin-top: 25px;
+            grid-template-columns: repeat(13, 1fr);
+            grid-template-rows: repeat(7, 1fr);
+            grid-template-areas: 
+            "description description description description description description description img-container img-container img-container img-container img-container img-container"
+            "description description description description description description description img-container img-container img-container img-container img-container img-container"
+            "description description description description description description description img-container img-container img-container img-container img-container img-container"
+            "description description description description description description description img-container img-container img-container img-container img-container img-container"
+            "description description description description description description description img-container img-container img-container img-container img-container img-container"
+            "description description description description description description description img-container img-container img-container img-container img-container img-container"
+            "description description description description description description description img-container img-container img-container img-container img-container img-container"
+            ;
+        }
+
     }
 </style>

@@ -64,4 +64,110 @@
         font-weight: 500;
     }
 
+    @media only screen and (max-width: 1000px) { 
+            .second_section__button-container img {
+            display: block;
+            height: 50px;
+            width: 50px;
+            margin-right: -38px;
+            margin-top: -10px;
+            z-index: 1;
+        }
+        .second_section__button-container button{
+            color: #26619C;
+            background-color: #fff;
+            border: none;
+            padding: 5px 50px;
+            border-radius: 70px;
+            font-size: 22px;
+            line-height: 30px;
+            font-weight: 500;
+        }
+         .second-section__descripction {
+            grid-area: description;
+            font-size: 35px;
+            font-weight: 400;
+            color: #fff;
+            text-align: center;
+        }
+
+    }
+
+    @media only screen and (max-width: 850px) { 
+        .second-section__descripction {
+            grid-area: description;
+            font-size: 30px;
+            font-weight: 400;
+            color: #fff;
+            text-align: center;
+        }    
+        .second_section__button-container button{
+            color: #26619C;
+            background-color: #fff;
+            border: none;
+            padding: 5px 40px;
+            border-radius: 70px;
+            font-size: 20px;
+            line-height: 20px;
+            font-weight: 500;
+        }
+        .second_section__button-container {
+            grid-area: btn;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+    }
+    @media only screen and (max-width: 715px) {  
+        .second-section__descripction {
+            font-size: 20px;
+        }  
+        .second_section__button-container button{    
+            padding: 5px 20px;
+            font-size: 18px;
+            line-height: 18px;
+        }
+        .second_section__button-container img {
+            height: 40px;
+            width: 40px;
+            margin-right: -30px;
+            margin-top: -5px;
+        }
+    }
+
+    @media only screen and (max-width: 650px) { 
+        .second-section-container {
+            background-image: url('./images/secondSection/second_section_background.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: fit-content;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(2, 0.5fr);
+            grid-template-areas: 
+            ". . . . . . . . . . . ."
+            ". . . . description description description description description description description ."
+            ". . . . btn btn btn btn btn btn btn ."
+            ". . . . . . . . . . . ."
+            ;
+
+        }
+        .second-section__descripction {
+            font-size: 18px;
+        }  
+        .second_section__button-container button{    
+            padding: 5px 20px;
+            font-size: 14px;
+            line-height: 16px;
+        }
+        .second_section__button-container img {
+            height: 30px;
+            width: 30px;
+            margin-right: -20px;
+            margin-top: -5px;
+        }
+    }
+
 </style>

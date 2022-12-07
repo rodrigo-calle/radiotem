@@ -63,4 +63,35 @@
         justify-content: start;
         align-items: center;
     }
+    @media only screen and (max-width: 1000px) {  
+        .footer-section {
+            width: calc(100% - 90px);
+            padding: 15px 45px;
+        } 
+    }
+    @media only screen and (max-width: 700px) {  
+        .footer-section__menu-container {
+            font-size: 18px;
+        }
+        .footer-section {
+            width: calc(100% - 40px);
+            padding: 15px 20px;
+        } 
+
+        .footer-section__contact-container h2 {
+            font-size: 25px;
+        }
+        .footer-section__menu-container a {
+            font-size: 18px;
+            margin: 5px 0px;
+            text-decoration: none;
+            color: #26619C;
+            width: 60px;
+        }
+
+        .footer-section__contact-container{
+            width: 150px;
+        }
+
+    }
 </style>
