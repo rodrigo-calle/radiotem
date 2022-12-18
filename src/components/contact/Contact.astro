@@ -19,11 +19,13 @@ import PageNav from "../pageNav/PageNav.astro";
                 y le brindará toda la información necesaria para el 
                 servicio que desee.
             </p>
-            <form action="">
-                <input type="text" placeholder="Nombres y Apellidos*" required><br>
-                <input type="email" placeholder="Correo electrónico*" required><br>
-                <input type="tel" placeholder="Teléfono / Celular*" required><br>
-                <input type="text" placeholder="Consulta*" required><br>
+            <form action="https://formsubmit.co/rodrigocesarcallecastillo@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="Nuevo contacto desde la web de RADIOTEM!">
+                <input type="hidden" name="_next" value="/custom_url">
+                <input type="text" name="nombre" placeholder="Nombres y Apellidos*" required><br>
+                <input type="email" name="correo" placeholder="Correo electrónico*" required><br>
+                <input type="tel"  name="telefono" placeholder="Teléfono / Celular*" required><br>
+                <input type="text" name="consulta" placeholder="Consulta*" required><br>
                 <br>
                 <p class="form-notes">
                     Los campos con * son obligatorios para poder procesar tu
@@ -31,7 +33,7 @@ import PageNav from "../pageNav/PageNav.astro";
                 </p>
                 <div class="terms-condition-box">
                     <div class="checkbox-container">
-                        <input type="checkbox">
+                        <input type="checkbox" required>
                     </div>
                    
                     <p>
@@ -41,6 +43,9 @@ import PageNav from "../pageNav/PageNav.astro";
                         que debe contener, siendo ﬁel expresión de la verdad.
                     </p>
                 </div>
+                <button  class="contact-btn-submit" type="submit">
+                    Enviar
+                </button>
             </form>
         </div>
         <div class="image-container">
@@ -50,6 +55,17 @@ import PageNav from "../pageNav/PageNav.astro";
 </div>
 
 <style>
+    .contact-btn-submit {
+        padding: 5px 20px;
+        border-radius: 14px;
+        color: #26619C;
+        background-color: #fff;
+        border: none;
+        font-weight: 600;
+        margin-top: 20px;
+        font-size: 25px;
+        border: thin solid #26619C;
+    }
     .contact-container {
         background-image: url('https://res.cloudinary.com/dwat1o60y/image/upload/v1670396180/radiotem/3_eczwfo.png');
         background-position: center;
@@ -214,6 +230,10 @@ import PageNav from "../pageNav/PageNav.astro";
         .contact-body {
             margin-top: 0px;
             padding-top: 100px;
+        }
+
+        .contact-btn-submit {
+            font-size: 18px;
         }
     }
 
