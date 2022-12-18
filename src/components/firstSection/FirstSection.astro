@@ -1,9 +1,14 @@
+---
+import HamburguerBar from "../hamburguerMenu/HamburguerBar.astro"
+
+---
+<HamburguerBar />
 <div class="first-section-container">
     <div class="first-section-container__header">
-        <div class="logo-container">
+        <div class="logo-container responsive-hiden">
             <img src="https://res.cloudinary.com/dwat1o60y/image/upload/v1670424865/radiotem/LOGO-PNG_bsp8gm.png" alt="" class="img">
         </div>
-        <div class="first-section-navbar">
+        <div class="first-section-navbar responsive-hiden">
             <a href="/medicos/" class="first-section-navbar__item">Staff Médico</a>
             <a href="/equipos/" class="first-section-navbar__item">Equipos</a>
             <a href="/contacto/" class="first-section-navbar__item">Contacto</a>
@@ -40,7 +45,7 @@
 
             </div>
             <div class="description-container__button-container">
-                <a target="_blank" href="https://api.whatsapp.com/send?phone=+51991717950">
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=991717950">
                     <button>RESERVA TU CITA</button>
                 </a>                     
             </div>
@@ -52,6 +57,9 @@
 </div>
 
 <style>
+    .responsive-hiden {
+     display: inherit;
+    }
     .first-section-container {
         font-size: 30px;
         background-image: url('https://res.cloudinary.com/dwat1o60y/image/upload/v1670396471/radiotem/first_section_background_nttvgc.png');
@@ -169,7 +177,7 @@
         color: #26619C;
         background-color: #fff;
         padding: 10px 45px;
-        border-radius: 30px;
+        border-radius: 14px;
         font-weight: bold;
         border: none;
         font-size: 35px;
@@ -286,7 +294,6 @@
             color: #26619C;
             background-color: #fff;
             padding: 10px 45px;
-            border-radius: 30px;
             font-weight: bold;
             border: none;
             font-size: 30px;
@@ -299,6 +306,9 @@
  
     }
     @media only screen and (max-width: 750px) {
+        .responsive-hiden {
+            display: none;
+        }
         .logo-container {
             margin-left: -20px;
         }
@@ -353,7 +363,6 @@
             color: #26619C;
             background-color: #fff;
             padding: 5px 35px;
-            border-radius: 30px;
             font-weight: bold;
             border: none;
             font-size: 26px;
@@ -395,7 +404,6 @@
             color: #26619C;
             background-color: #fff;
             padding: 5px 15px;
-            border-radius: 30px;
             font-weight: bold;
             border: none;
             font-size: 20px;

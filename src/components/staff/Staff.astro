@@ -1,9 +1,11 @@
 ---
+import HamburguerBar from "../hamburguerMenu/HamburguerBar.astro";
 import Navbar from "../navbar/Navbar.astro";
 import PageNav from "../pageNav/PageNav.astro";
 
 ---
 <Navbar />
+<HamburguerBar />
 <div class="contact-container">
     <div class="header-container">
         <!-- <img src="../images/contact/header__shadow.png" alt="">  -->
@@ -64,7 +66,7 @@ import PageNav from "../pageNav/PageNav.astro";
         color: #26619C;
         width: 88%;
         margin: 0 auto;
-        font-size: 50px;
+        font-size: 48px;
 
     }
 
@@ -131,6 +133,20 @@ import PageNav from "../pageNav/PageNav.astro";
         .body-container {
             margin-top: -100px;
             padding-bottom: 35px;
+        }
+    }
+
+    @media only screen and (max-width: 750px) { 
+        /* .header-container {
+            display: none;
+        } */
+        .header-container {
+            display: none;
+        } 
+        .body-container{
+            margin-top: 0px;
+            padding-top: 100px;
+            padding-bottom: 20px;
         }
     }
 

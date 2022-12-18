@@ -1,10 +1,12 @@
 ---
+import HamburguerBar from "../hamburguerMenu/HamburguerBar.astro";
 import Navbar from "../navbar/Navbar.astro";
 import PageNav from "../pageNav/PageNav.astro";
 
 ---
 
 <Navbar />
+<HamburguerBar />
 <div class="contact-container">
     <div class="header-container">
         <PageNav />
@@ -78,14 +80,14 @@ import PageNav from "../pageNav/PageNav.astro";
     }
 
     .form-container h1 {
-        font-size: 65px;
+        font-size: 48px;
     }
     .form-description {
-        font-size: 30px;
+        font-size: 28px;
     }
     .form-container form input {
         border: none;
-        font-size: 32px;
+        font-size: 28px;
         color: #26619C;
         border-bottom: 2px solid #26619C;
         margin-top: 25px;
@@ -205,6 +207,16 @@ import PageNav from "../pageNav/PageNav.astro";
             margin: 0;
         }
     }
+    @media only screen and (max-width: 750px) { 
+        .header-container {
+            display: none;
+        }
+        .contact-body {
+            margin-top: 0px;
+            padding-top: 100px;
+        }
+    }
+
 
     @media only screen and (max-width: 650px) { 
         .contact-body {

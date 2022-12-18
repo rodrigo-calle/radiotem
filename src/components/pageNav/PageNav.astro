@@ -1,7 +1,12 @@
 <div class="first-section-container__header">
-    <div class="logo-container">
-        <img class="img" src="https://res.cloudinary.com/dwat1o60y/image/upload/v1670424865/radiotem/LOGO-PNG_bsp8gm.png" alt="">
+    <!-- <a href="/" style="width: fit-content;">   -->
+    <div class="logo-container"> 
+            <a href="/" class="link-home">
+                <img class="img" src="https://res.cloudinary.com/dwat1o60y/image/upload/v1670424865/radiotem/LOGO-PNG_bsp8gm.png" alt="">   
+            </a>       
+                 
     </div>
+    <!-- </a> -->
     <div class="first-section-navbar">
         <a href="/medicos/" class="first-section-navbar__item">Staff Médico</a>
         <a href="/equipos/" class="first-section-navbar__item">Equipos</a>
@@ -27,7 +32,10 @@
         display: flex;
         align-items: center;
     }
-    .img {
+    .link-home {
+        width: fit-content;
+    }
+    .link-home .img {
         width: 580px;
         height: 160px;
     }
@@ -47,21 +55,21 @@
         color: #fff;
     }
     @media only screen and (max-width: 1400px) { 
-        .img {
+        .link-home .img  {
             width: 530px;
             height: 140px;
         }
     }
 
     @media only screen and (max-width: 1250px) { 
-        .img {
+        .link-home .img  {
             width: 330px;
             height: 120px;
         }
     }
 
     @media only screen and (max-width: 950px) {
-        .img {
+        .link-home .img  {
             width: 280px;
             height: 90px;
         }
@@ -79,13 +87,13 @@
         .logo-container {
             width: 40%;
         }
-        .irst-section-navbar {
+        .first-section-navbar {
             width: 50%;
         }
     }
 
     @media only screen and (max-width: 750px) {
-        .img {
+        .link-home .img  {
             width: 290px;
             height: 80px;
         }
@@ -110,8 +118,9 @@
         .irst-section-navbar {
             width: 50%;
         }
-        .img {
-            width: 260px;
+
+        .link-home .img  {
+            width: 100%;
             height: 60px;
         }
     }

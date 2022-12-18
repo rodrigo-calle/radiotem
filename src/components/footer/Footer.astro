@@ -1,10 +1,12 @@
 <div class="footer-section">
     <div class="footer-section__contact-container">
         <h2>Contacto</h2>
-        <p class="footer-location">
+        <div class="footer-location">
             <img src="./images/footer/location.svg" alt="">
-             Jr.Ladislao Espinar 522 - Chimbote
-        </p>
+            <p class="location-text">
+                Jr.Ladislao Espinar 522 - Chimbote
+            </p> 
+        </div>
         <p class="footer-phone">
             CENTRAL TELEFÓNICA:
             <strong>
@@ -13,9 +15,21 @@
         </p>
     </div>
     <div class="footer-section__menu-container">
-        <a href="/" class="footer__menu-container--item">Inicio</a>
-        <a href="#" class="footer__menu-container--item">Política de cookies</a>
-        <a href="#" class="footer__menu-container--item no-border">Política de privacidad</a>
+        <a href="/" class="footer__menu-container--item">
+            <p>
+                Inicio
+            </p>
+        </a>
+        <a href="#" class="footer__menu-container--item">
+            <p>
+                Política de cookies    
+            </p>    
+        </a>
+        <a href="#" class="footer__menu-container--item no-border">
+            <p>
+                Política de privacidad
+            </p>
+        </a>
     </div>
 </div>
 
@@ -58,9 +72,16 @@
         color: #26619C;
     }
 
+    .footer-section__menu-container a p{
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
     .footer-location {
         display: flex;
-        justify-content: start;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
     }
     @media only screen and (max-width: 1000px) {  
@@ -69,7 +90,7 @@
             padding: 15px 45px;
         } 
     }
-    @media only screen and (max-width: 700px) {  
+    @media only screen and (max-width: 750px) {  
         .footer-section__menu-container {
             font-size: 18px;
         }
@@ -79,18 +100,29 @@
         } 
 
         .footer-section__contact-container h2 {
-            font-size: 25px;
+            font-size: 20px;
+        }
+
+        .footer__menu-container--item {
+            border-bottom: 2px solid #26619C;
+            padding: 1px 8px;
+            margin: 3px 0px;
         }
         .footer-section__menu-container a {
-            font-size: 18px;
-            margin: 5px 0px;
+            font-size: 12px;
+            margin: 2px 0px;
             text-decoration: none;
             color: #26619C;
-            width: 60px;
+        }
+
+        .footer-location img {
+            height: 20px;
+            width: 20px;
         }
 
         .footer-section__contact-container{
-            width: 150px;
+            width: fit-content;
+            font-size: 12px;
         }
 
     }
