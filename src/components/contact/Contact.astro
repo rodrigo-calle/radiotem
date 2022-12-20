@@ -36,7 +36,7 @@ import PageNav from "../pageNav/PageNav.astro";
                         <input type="checkbox" required>
                     </div>
                    
-                    <p>
+                    <p class="terms-and-conditions">
                         Acepto haber leído los términos y condiciones de uso de privacidad.
                         Declaro que los datos consignados son correctos y que esta
                         declaración se ha confeccionado sin omitir o falsear dato alguno
@@ -64,6 +64,7 @@ import PageNav from "../pageNav/PageNav.astro";
         font-weight: 600;
         margin-top: 20px;
         font-size: 25px;
+        line-height: 25px;
         border: thin solid #26619C;
     }
     .contact-container {
@@ -94,16 +95,22 @@ import PageNav from "../pageNav/PageNav.astro";
         margin: 0px auto;
         color: #26619C;
     }
-
+    .terms-and-conditions {
+    line-height: 20px;   
+    }
     .form-container h1 {
         font-size: 48px;
+        line-height: 52px;
     }
     .form-description {
         font-size: 28px;
+        line-height: 28px;
+        margin-top: 10px;
     }
     .form-container form input {
         border: none;
         font-size: 28px;
+        line-height: 28px;
         color: #26619C;
         border-bottom: 2px solid #26619C;
         margin-top: 25px;
@@ -125,6 +132,7 @@ import PageNav from "../pageNav/PageNav.astro";
     .form-notes {
         font-weight: 600;
         font-size: 22px;
+        line-height: 22px;
     }
     .terms-condition-box .checkbox-container  {
         display: flex;
@@ -135,6 +143,7 @@ import PageNav from "../pageNav/PageNav.astro";
         padding-top: 0px;
         padding-left: 0px;
     }
+
     .terms-condition-box .checkbox-container input{
         width: 25px;
         border-radius: 7%;

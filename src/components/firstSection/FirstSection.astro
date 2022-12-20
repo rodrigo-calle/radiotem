@@ -20,7 +20,7 @@ import HamburguerBar from "../hamburguerMenu/HamburguerBar.astro"
                 <h3>
                     Brindamos un diagnóstico seguro, eficaz y
                     preciso, así como un servicio de calidad
-                    para todos nuestros pacientes.
+                    <br>  para todos nuestros pacientes.
                 </h3>                
             </div>
             <div class="description-container__list-container">
@@ -46,7 +46,9 @@ import HamburguerBar from "../hamburguerMenu/HamburguerBar.astro"
             </div>
             <div class="description-container__button-container">
                 <a target="_blank" href="https://api.whatsapp.com/send?phone=991717950">
-                    <button>RESERVA TU CITA</button>
+                    <button>
+                        RESERVA TU CITA
+                    </button>
                 </a>                     
             </div>
         </div>
@@ -113,9 +115,10 @@ import HamburguerBar from "../hamburguerMenu/HamburguerBar.astro"
     }
     .first-section-navbar__item {
         padding: 15px;
-        font-weight: bold;
+        font-weight: 600;
         text-decoration: none;
         color: #fff;
+        font-size: 30px;
     }
     .first-section-body {
         display: grid;
@@ -149,12 +152,15 @@ import HamburguerBar from "../hamburguerMenu/HamburguerBar.astro"
         color: #26619C;  
         padding: 10px; 
         border-radius: 100px 10px / 190px;
-        margin: 5px 0px 10px 0px
+        margin: 5px 0px 10px 0px;
+        grid-area: title;
     }
     .description-container__header h3 {
         margin: 0;
         text-align: center;
-        font-weight: 500;
+        font-weight: bold;
+        line-height: 26px;
+        
     }
 
     .first-section-body__description-container .list-container__group {
@@ -163,7 +169,7 @@ import HamburguerBar from "../hamburguerMenu/HamburguerBar.astro"
     }
     .list-container__group-item {
         line-height: 30px;
-        margin: 15px 0px;
+        margin: 0px 0px;
     }
     .description-container__button-container {
         width: 100%;
@@ -176,9 +182,9 @@ import HamburguerBar from "../hamburguerMenu/HamburguerBar.astro"
     .description-container__button-container button{
         color: #26619C;
         background-color: #fff;
-        padding: 10px 45px;
-        border-radius: 14px;
-        font-weight: bold;
+        padding: 5px 35px;
+        border-radius: 25px;
+        font-weight: 600;
         border: none;
         font-size: 35px;
     }
@@ -225,7 +231,7 @@ import HamburguerBar from "../hamburguerMenu/HamburguerBar.astro"
 
         .list-container__group-item {
             line-height: 22px;
-            margin: 10px 0px;
+            margin: 5px 0px;
         }
 
         .first-section-body {
@@ -239,7 +245,7 @@ import HamburguerBar from "../hamburguerMenu/HamburguerBar.astro"
             grid-template-columns: repeat(13, 1fr);
             grid-template-rows: repeat(7, 1fr);
             grid-template-areas: 
-            "description description description description description description . img-container img-container img-container img-container img-container img-container"
+            "title title title title title title title title title img-container img-container img-container img-container"
             "description description description description description description . img-container img-container img-container img-container img-container img-container"
             "description description description description description description . img-container img-container img-container img-container img-container img-container"
             "description description description description description description . img-container img-container img-container img-container img-container img-container"
@@ -249,7 +255,7 @@ import HamburguerBar from "../hamburguerMenu/HamburguerBar.astro"
             ;
         }
     }
-    @media only screen and (max-width: 950px) {
+    @media only screen and (max-width: 1050px) {
         .first-section-navbar__item {
             font-size: 18px;
             padding: 5px;

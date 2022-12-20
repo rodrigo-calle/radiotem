@@ -28,22 +28,28 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style is:global>
+	@font-face {
+		font-family: myFamilyFont;
+		src: url('./fonts/BalooPaaji2-VariableFont_wght.ttf');
+	}
 	* {
 		margin: 0;
 		padding: 0;
-		font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+		font-family: myFamilyFont;
+		/* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
 	}
 	:root {
 		--accent: 124, 58, 237;
 		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
 	}
 	html {
-		font-family: system-ui, sans-serif;
+		font-family: myFamilyFont;
 		background-color: #F6F6F6;
 	}
 	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
+		font-family: myFamilyFont;
+		/* Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+			Bitstream Vera Sans Mono, Courier New, monospace; */
 	}
 
 	.whatsapp-link-btn {
@@ -69,7 +75,6 @@ const { title } = Astro.props;
 		height: 55px;
 		width: 55px;
 	}
-
 
 </style>
 

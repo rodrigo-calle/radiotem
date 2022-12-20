@@ -1,8 +1,25 @@
 <div class="fifth-section-container">
-    <div>
+    <!-- <div>
         <img src="https://res.cloudinary.com/dwat1o60y/image/upload/v1670396131/radiotem/image_3fifth_content_jnvwyl.png" alt="">
+    </div> -->
+    <div class="body-container">
+        <h1>Tecnólogos y Médicos Radiólogos <br>
+        a su servicio</h1>
+        <div class="body-container__content">
+            <div class="body-container__content__description">
+                <p>
+                    Contamos con profesionales médicos tecnólogos capacitados para brindarles el mejor
+                    servicio de diagnóstico de imágenes, en nuestro equipo tenemos a siete Licenciados en
+                    Tecnología Médica, con especialización en Radiología y a Médicos Radiólogos con
+                    especialiadad en Oncología.
+        
+                </p>
+            </div>
+            <div class="body-container__content__image">
+                <img src="https://res.cloudinary.com/dwat1o60y/image/upload/v1670396272/radiotem/doctors_xhac05.png" alt="">
+            </div>
+        </div>        
     </div>
-
 </div>
 
 <style>
@@ -11,7 +28,7 @@
         background-position: right;
         background-size: cover;
         background-repeat: no-repeat;
-        padding-top: 150px;
+        padding-top: 220px;
         display: flex;
         justify-content: center;
         height: fit-content;
@@ -21,57 +38,164 @@
         width: 100%;
         display: flex;
         justify-content: center;
-
+        height: 600px;
+        padding-bottom: 32px;
     }
     .fifth-section-container div img {
         width: 90%;
-        height: 1050px;        
+        height: 100%;        
     }
 
+    .body-container {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        margin-top: -60px;
+
+    }
+    .body-container h1{
+        color: #26619C;
+        width: 88%;
+        margin: 0 auto;
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+
+    .body-container__content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .body-container__content__description {
+        width: 50%;
+    }
+    .body-container__content__description p {
+        color: #26619C;
+        font-size: 30px;
+        width: 75%;  
+        line-height: 34px;      
+        margin: 0 auto;
+    }
+    .body-container__content__image {
+        width: 60%;
+        margin-left: -10%;
+    }
+    .body-container__content__image img {
+        width: 100%;
+        height: 100%;
+    }
+
+
     @media only screen and (max-width: 1400px) {
-        .fifth-section-container div img {
+        /* .fifth-section-container div img {
             width: 90%;
             height: 900px;
-        }
+        } */
     }
-    @media only screen and (max-width: 1200px) {
-        .fifth-section-container div img {
-            width: 90%;
-            height: 750px;
+    @media only screen and (max-width: 1250px) {
+        .fifth-section-container div {
+            height: 500px;
         }
     }
     @media only screen and (max-width: 1000px) {
-        .fifth-section-container div img {
-            width: 90%;
-            height: 650px;
+        .fifth-section-container div {
+            height: 400px;
         }
+        .body-container__content__description p {
+            font-size: 24px;
+            width: 75%;  
+            line-height: 24px;   
+        }
+
         .fifth-section-container {
-            padding-top: 100px;
+            padding-top: 150px;
         }
     }
     @media only screen and (max-width: 850px) {
+        .fifth-section-container {
+            padding-top: 50px!important;
+        }
+        .body-container h1{
+            color: #26619C;
+            width: 88%;
+            margin: 0 auto;
+            font-size: 38px;
+            line-height: 38px;
+            margin-bottom: 15px;
+        }
+        .body-container__content {
+            height: 235px!important;
+        }
+
+        .body-container__content__description {
+            height: 200px!important;
+        }
+
+        .body-container__content__description p {
+            font-size: 20px;
+            width: 75%;  
+            line-height: 20px;  
+            height: 300px; 
+        }
+
+        .fifth-section-container {
+            padding-top: 150px;
+        }
+
         .fifth-section-container div img {
             width: 90%;
-            height: 550px;
-        }
-        .fifth-section-container {
-            padding-top: 100px;
+            height: 80%;        
         }
     }
     @media only screen and (max-width: 650px) {
         .fifth-section-container {
-            padding-top: 50px;
+            padding-top: 0px!important;
+        }
+        .body-container {
+            padding-bottom: 0px!important;
+
+        }
+        .body-container h1{
+            color: #26619C;
+            width: 88%;
+            margin: 0 auto;
+            font-size: 28px;
+            line-height: 28px;
+            margin-bottom: 15px;
+        }
+        .body-container__content {
+            height: 100px!important;
+        }
+
+        .body-container__content__description {
+            height: 200px!important;
+        }
+
+        .body-container__content__description p {
+            font-size: 14px;
+            width: 75%;  
+            line-height: 14px;  
+            height: fit-content ;
+            padding-bottom: 0;
+        }
+
+        .fifth-section-container {
+            padding-top: 150px;
+        }
+        .body-container__content__image {
+            height: 100px;
         }
 
         .fifth-section-container div img {
             width: 90%;
-            height: 450px;
+            height: 54%;        
         }
     }
     @media only screen and (max-width: 600px) {
-        .fifth-section-container div img {
+        /* .fifth-section-container div img {
             width: 90%;
             height: 250px;
-        }
+        } */
     }
 </style>
