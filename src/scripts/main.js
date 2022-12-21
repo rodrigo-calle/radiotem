@@ -1,4 +1,7 @@
+import AOS from "aos";
+import 'aos/dist/aos.css'; 
 (() => {
+    AOS.init();
     document.addEventListener("click", e => {
         // const hBtn = document.querySelector('.hamburguer-button');
         const menuList = document.getElementById('menu-list');

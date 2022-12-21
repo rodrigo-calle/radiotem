@@ -12,7 +12,11 @@ import PageNav from "../pageNav/PageNav.astro";
         <PageNav />
      </div>
      <div class="tools-container__body">
-        <div class="tools-container__body--description">
+        <div 
+            class="tools-container__body--description"
+            data-aos="fade-right"
+            data-aos-duration="2000"    
+        >
             <h1>
                 TOMOGRAFÍA COMPUTARIZADA
             </h1>
@@ -40,7 +44,12 @@ import PageNav from "../pageNav/PageNav.astro";
             </ul>
         </div>
         <div class="tools-container__body--image">
-            <img src="https://res.cloudinary.com/dwat1o60y/image/upload/v1670383988/radiotem/10_dpr4cw.png" alt="">
+            <img 
+                data-aos="fade-left"
+                data-aos-duration="2000" 
+                src="https://res.cloudinary.com/dwat1o60y/image/upload/v1670383988/radiotem/10_dpr4cw.png" 
+                alt="Tomografías clinica laboratorio radiotem chiclayo"
+            >
         </div>
 
      </div>
@@ -94,6 +103,7 @@ import PageNav from "../pageNav/PageNav.astro";
 
     .tools-container__body--description ul li {
         margin-top: 15px;
+        line-height: 25px;
     }
 
     .tools-container__body--description h1 {
@@ -105,6 +115,7 @@ import PageNav from "../pageNav/PageNav.astro";
         margin: 0 auto;
         font-size: 38px;
         line-height: 38px;
+        text-align: center;
     }
     .tools-container__body--image {
         display: flex;
@@ -114,11 +125,11 @@ import PageNav from "../pageNav/PageNav.astro";
         margin: 0px auto;
     }
     .tools-container__body--image img {
-        width: 80%;
+        width: 70%;
         height: 80%;
 
     }
-    @media only screen and (max-width: 1000px) {
+    @media only screen and (max-width: 1100px) {
         .tools-container__body--description p {
 
             font-size: 26px;
@@ -131,7 +142,7 @@ import PageNav from "../pageNav/PageNav.astro";
         }
         .tools-container__body--description ul li {
             margin-top: 10px;
-            line-height: 10px;
+            line-height: 25px;
         }
         .tools-container__body--description h1 {
             font-size: 30px;
@@ -139,8 +150,8 @@ import PageNav from "../pageNav/PageNav.astro";
         }
 
         .tools-container__body--image img {
-            width: 100%;
-            height: 80%;
+            width: 90%;
+            height: 70%;
         }
     }
     @media only screen and (max-width: 800px) {
@@ -178,6 +189,10 @@ import PageNav from "../pageNav/PageNav.astro";
             padding-top: 100px;
             margin-top: 0px;
         }
+        .tools-container__body--image img {
+            width: 90%;
+            height: 50%;
+        }
     }
     @media only screen and (max-width: 650px) {
         .tools-container__body--description p {
@@ -191,6 +206,7 @@ import PageNav from "../pageNav/PageNav.astro";
         }
         .tools-container__body--description ul li {
             margin-top: 6px;
+            line-height: 15px;
         }
         .tools-container__body--description h1 {
             font-size: 20px;
@@ -199,7 +215,14 @@ import PageNav from "../pageNav/PageNav.astro";
 
         .tools-container__body--image img {
             width: 100%;
-            height: 50%;
+            height: 70%;
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+        .tools-container__body--image img {
+            width: 90%;
+            height: 60%;
         }
     }
  </style>
