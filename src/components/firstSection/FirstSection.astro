@@ -235,8 +235,14 @@ import HamburguerBar from "../hamburguerMenu/HamburguerBar.astro"
         }
     }
 
-    @media only screen and (max-width: 1250px) {
-
+    @media only screen and (max-width: 1281px) {
+        .description-container__header h3 {
+        margin: 0;
+        text-align: center;
+        font-weight: 600;
+        line-height: 26px;
+        
+    }
         .description-container__button-container button{
             font-size: 38px;
             line-height: 38px;
@@ -250,7 +256,7 @@ import HamburguerBar from "../hamburguerMenu/HamburguerBar.astro"
         }
         .first-section-body__image-container img {
             width: 90%;
-            height: 70%;
+            height: 60%;
         }
 
         .list-container__group-item {
@@ -497,6 +503,16 @@ import HamburguerBar from "../hamburguerMenu/HamburguerBar.astro"
         .first-section-body__image-container img {
             width: 100%;
             height: 55%;            
+        }
+        .description-container__header h3 {
+            line-height: 16px;                
+        }
+    }
+
+    @media only screen and (max-width: 500px) {  
+        .first-section-body__image-container img {
+            width: 100%;
+            height: 40%;            
         }
         .description-container__header h3 {
             line-height: 16px;                
