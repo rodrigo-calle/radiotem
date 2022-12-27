@@ -1,0 +1,100 @@
+---
+import PageNav from "../pageNav/PageNav.astro";
+
+---
+<div class="navbar">
+    <PageNav />
+</div>
+
+<div class="confirmation-container">
+    <div class="confirmation-message">
+        <p>Gracias por contactarte con Radiotem, te responderemos lo más pronto posible</p>
+        <a href="/">
+            <button>Regresar a la página principal</button>
+        </a>
+    </div>
+</div>
+
+<style>
+    .navbar {
+        background-color: #26619C;
+    }
+    .confirmation-container {
+        height: 70vh;
+        width: 100%;
+        background-image: url('https://res.cloudinary.com/dwat1o60y/image/upload/v1671505612/radiotem/doctor-checking-x-ray-results_1_m43pqo.jpg');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .confirmation-message {
+        background-color: #fff;
+        border-radius: 14px;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+    .confirmation-message p {
+        font-size: 34px;
+        text-align: center;
+        line-height: 34px;
+    }
+
+    .confirmation-message button{
+        border: 3px solid #26619C;
+        font-size: 34px;
+        text-align: center;
+        line-height: 34px;
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 30px;
+        margin-top: 10px;
+        cursor: pointer;
+        background: #26619C;
+        color: #fff;
+    }
+
+    .confirmation-message button:hover{
+        border: 3px solid #26619C;
+        background-color: #fff;
+        color: #26619C;
+    }
+    @media only screen and (max-width: 800px) { 
+        .confirmation-message p {
+            font-size: 28px;
+            line-height: 28px;
+        }
+        .confirmation-message button{
+            font-size: 28px;
+            line-height: 28px;
+        }
+    }
+
+    @media only screen and (max-width: 600px) { 
+        .confirmation-message p {
+            font-size: 22px;
+            line-height: 22px;
+        }
+        .confirmation-message button{
+            font-size: 22px;
+            line-height: 22px;
+        }
+    }
+
+    @media only screen and (max-width: 400px) { 
+        .confirmation-message p {
+            font-size: 20px;
+            line-height: 20px;
+        }
+        .confirmation-message button{
+            font-size: 20px;
+            line-height: 20px;
+        }
+    }
+</style>
